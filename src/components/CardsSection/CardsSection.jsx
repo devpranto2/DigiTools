@@ -1,15 +1,20 @@
-import React, { use } from "react";
+import React, { use, useState } from "react";
 import Products from "../Products/Products";
+import Carts from "../Carts/Carts";
 
-const CardsSection = ({ cardsPromise }) => {
+const CardsSection = ({ cardsPromise ,addToCart}) => {
   const products = use(cardsPromise);
 //   console.log(products);
+const [selected,setSelected] = useState('products');
+const [cart,setCart] = useState([])
+// console.log(selected)
+
   return (
-    <div>
+    <div className="">
       <div className="bg-gray-100 py-16 px-4 flex justify-center">
-        <div className="text-center max-w-2xl">
+        <div className="text-center md:w-10/12  lg:w-10/12 mx-auto">
          
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
             Premium Digital Tools
           </h1>
 
@@ -19,15 +24,22 @@ const CardsSection = ({ cardsPromise }) => {
           </p>
 
 
-          <div className="mt-8 inline-flex items-center bg-white rounded-full shadow-sm border border-gray-200 p-1">
-                <button className="px-6 py-2 rounded-full bg-linear-to-r from-purple-500 to-indigo-500 text-white font-medium shadow-md">
+          <div className="mt-8 gap-3 inline-flex items-center bg-white rounded-full shadow-sm border border-gray-200 p-1">
+            {/* //-------------- */}
+                <button
+                onClick={()=>setSelected("products")}
+                className={`px-6 ${selected === "products" ?"bg-linear-to-r from-purple-500 to-indigo-500 text-white" : ""} py-2 rounded-full  font-medium shadow-md`}>
                 Products
                 </button>
-                <button className="px-6 py-2 rounded-full text-gray-700 font-medium">
-                Cart (2)
+            {/* ---------------- */}
+                <button
+                onClick={()=>setSelected("selected")}
+                className={`px-6 ${selected === "selected" ?"bg-linear-to-r from-purple-500 to-indigo-500 text-white" : ""} py-2 rounded-full  font-medium shadow-md`}>
+                Cart ({cart.length})
                 </button>
+              {/* ------------- */}
           </div>
-          <Products products={products}></Products>
+         {selected ==='products' ? <Products cart={cart} setCart={setCart} addToCart={addToCart} products={products}></Products> : <Carts cart={cart}></Carts>}
         </div>
       </div>
     </div>

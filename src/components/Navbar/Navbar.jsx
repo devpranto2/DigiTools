@@ -1,6 +1,6 @@
 import React from "react";
 import cartIcon from '../../assets/products/shopping-cart.png'
-const Navbar = () => {
+const Navbar = ({cartCount}) => {
   return (
     <div className="bg-base-100 shadow-sm ">
       <div className="navbar justify-between w-11/12 mx-auto ">
@@ -45,7 +45,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center gap-3">
-          <img className="" src={cartIcon} alt="nothis" />
+          <div className="relative">
+            <img className="w-6 h-6" src={cartIcon} alt="cart" />
+            {cartCount > 0 && (
+              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[12px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
+                {cartCount}
+              </span>
+            )}
+          </div>
           <a className="font-semibold" href="">Login</a>
           <a className="btn text-white rounded-3xl bg-linear-to-r from-purple-800 to-purple-600">Get Started</a>
         </div>

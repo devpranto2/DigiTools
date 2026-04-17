@@ -47,7 +47,7 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <img className="" src={cartIcon} alt="nothis" />
           <a className="font-semibold" href="">Login</a>
-          <a className="btn text-white rounded-3xl bg-linear-to-r from-purple-800 to-purple-600">Button</a>
+          <a className="btn text-white rounded-3xl bg-linear-to-r from-purple-800 to-purple-600">Get Started</a>
         </div>
       </div>
     </div>

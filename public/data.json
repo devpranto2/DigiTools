@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create stunning, ATS-friendly resumes in minutes with AI-powered content suggestions.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF", "AI content generator"],
+    "icon": "https://i.ibb.co.com/VY9Q3XBf/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Portfolio Kit",
+    "description": "Complete toolkit for designers to showcase work with modern, responsive portfolio layouts.",
+    "price": 49.00,
+    "period": "one-time",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["20 portfolio layouts", "Figma source files", "Responsive design", "Client login area"],
+    "icon": "https://i.ibb.co.com/RG7BQ7p4/portfolio.png"
+  },
+  {
+    "id": 3,
+    "name": "AI Writing Assistant",
+    "description": "Generate blog posts, emails, and social media content with advanced AI language models.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["50+ writing templates", "SEO optimization", "Plagiarism checker", "Multi-language support"],
+    "icon": "https://i.ibb.co.com/G4LcrJK1/writing-2327400-1.png"
+  },
+  {
+    "id": 4,
+    "name": "TaskFlow Premium",
+    "description": "Team productivity suite with kanban boards, timelines, and automated workflows.",
+    "price": 149.00,
+    "period": "yearly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Unlimited projects", "Time tracking", "Automation rules", "Slack & email integration"],
+    "icon": "https://i.ibb.co.com/m5Dm0pnJ/Group-7.png"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Scheduler",
+    "description": "Plan, schedule, and analyze posts across all major social platforms from one dashboard.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Unlimited scheduling", "Analytics dashboard", "Bulk upload", "Team collaboration"],
+    "icon": "https://i.ibb.co.com/JjSRyjxY/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "Cloud Backup Basic",
+    "description": "Secure, automated backup solution for documents, photos, and important files.",
+    "price": 59.00,
+    "period": "yearly",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["500GB storage", "End-to-end encryption", "Auto-sync all devices", "30-day version history"],
+    "icon": "https://i.ibb.co.com/5g7c36jk/operation.png"
+  }
+]

@@ -7,6 +7,7 @@ import Navbar from './components/Navbar/Navbar'
 import Stats from './components/Stats/Stats'
 import { ToastContainer } from 'react-toastify'
 import { DiVim } from 'react-icons/di'
+import Steps from './components/Steps/Steps'
 
 
 const fetchData = async () => {
@@ -41,6 +42,7 @@ function App() {
           
       </CardsSection>
       </Suspense>
+      <Steps></Steps>
        <ToastContainer />
     </>
   )

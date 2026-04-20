@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 const ProductCard = ({ products ,addToCart ,cart ,setCart}) => {
     const [activeButtonId, setActiveButtonId] = useState(null);
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-15 md:w-11/12 lg:w-8/12 mx-auto">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-15 md:w-11/12 lg:w-9/12 mx-auto">
       {products.map((product) => {
         // console.group(product);
         const { name, period, tag, id, price, icon, description, features } =

@@ -4,7 +4,7 @@ const Navbar = ({cartCount}) => {
   return (
     <nav className="sticky top-0 z-50">
       <div className="bg-base-100 shadow-sm ">
-      <div className="navbar justify-between w-11/12 mx-auto ">
+      <div className="navbar justify-between md:w-11/12 lg:w-9/12 mx-auto ">
         <div className="">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

@@ -5,17 +5,17 @@ const Pricing = () => {
   return (
     <div className="w-8/12 mx-auto my-10">
       <div>
-        <h1 className="text-center font-semibold text-4xl">
-          Simple, Transparent Pricing
+        <h1 className="text-center font-bold text-4xl">
+          Simple Transparent Pricing
         </h1>
-        <p className="text-lg text-center text-gray-500 py-4">
+        <p className="text-sm text-center text-gray-500 py-4">
           Choose the plan that fits your needs. Upgrade or downgrade anytime.
         </p>
       </div>
       <div className="grid justify-center gap-10 my-6 lg:grid-cols-3">
         <div>
-          <div className="card w-[320px] h-[440px] bg-[#f9fafc] shadow-sm">
-            <div className="card-body  bg-[##f9fafc] h-[440px]">
+          <div className="card w-[320px] `h-110` bg-[#f9fafc] shadow-sm">
+            <div className="card-body  bg-[##f9fafc] `h-110`">
               <span className="text-2xl">Starter</span>
               <p className="text-xl text-gray-500">
                 Perfect for getting started
@@ -51,8 +51,8 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="card w-[320px] h-[440px] mb-8">
-          <div className="relative  rounded-2xl p-[1px] bg-linear-to-r from-purple-600 to-pink-500 shadow-lg">
+        <div className="card w-[320px] `h-110` mb-8">
+          <div className="relative  rounded-2xl  bg-linear-to-r from-purple-600 to-pink-500 shadow-lg">
             <div className="bg-linear-to-br from-[#5b3df5] to-[#a020f0] rounded-2xl p-6 text-white relative">
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-100 text-orange-500 text-sm px-4 py-1 rounded-full font-medium shadow">
                 Most Popular
@@ -106,8 +106,8 @@ const Pricing = () => {
         </div>
 
         <div>
-          <div className="card w-[320px] h-[440px]  bg-[#f9fafc] shadow-sm">
-            <div className="card-body  bg-[##f9fafc] h-[440px]">
+          <div className="card w-[320px] `h-110`  bg-[#f9fafc] shadow-sm">
+            <div className="card-body  bg-[##f9fafc] `h-110`">
               <span className="text-2xl">Enterprise</span>
               <p className="text-xl text-gray-500">
                 For teams and businesses

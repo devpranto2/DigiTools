@@ -25,7 +25,7 @@ const Steps = () => {
               Create Account
             </h2>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Sign up for free in seconds. No credit card required to get
+              Sign up for free in seconds. <br /> No credit card required to get
               started.
             </p>
           </div>
@@ -44,7 +44,7 @@ const Steps = () => {
               Choose Products
             </h2>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Browse our catalog and select the toolsthat fit your needs.
+              Browse our catalog and <br /> select the toolsthat fit your needs.
             </p>
           </div>
         </div>
@@ -62,7 +62,7 @@ const Steps = () => {
              Start Creating
             </h2>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Download and start using your premium tools immediately.
+              Download and start <br /> using your premium tools immediately.
             </p>
           </div>
         </div>

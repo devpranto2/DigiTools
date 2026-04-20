@@ -13,13 +13,13 @@ const CardsSection = ({ cardsPromise, addToCart, cartCount, setCartCount ,addToC
     <div className="">
       <div className="bg-gray-100 py-16 px-4 flex justify-center">
         <div className="text-center md:w-10/12  lg:w-10/12 mx-auto">
-          <h1 className="text-3xl md:text-5xl font-bold text-gray-900">
+          <h1 className="text-3xl pt-15 md:text-6xl font-bold text-gray-900">
             Premium Digital Tools
           </h1>
 
-          <p className="mt-4 text-gray-500 text-lg">
+          <p className="mt-4 pb-10 text-gray-500 text-lg">
             Choose from our curated collection of premium digital products
-            designed to boost your productivity and creativity.
+            designed <br /> to boost your productivity and creativity.
           </p>
 
           <div className="mt-8 gap-3 inline-flex items-center bg-white rounded-full shadow-sm border border-gray-200 p-1">

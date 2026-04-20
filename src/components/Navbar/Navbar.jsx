@@ -2,7 +2,7 @@ import React from "react";
 import cartIcon from '../../assets/products/shopping-cart.png'
 const Navbar = ({cartCount}) => {
   return (
-    <nav className="sticky top-0">
+    <nav className="sticky top-0 z-50">
       <div className="bg-base-100 shadow-sm ">
       <div className="navbar justify-between w-11/12 mx-auto ">
         <div className="">

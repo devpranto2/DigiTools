@@ -13,6 +13,7 @@ const Carts = ({ cart, setCart ,cartCount,
   const handleDeleteCart = (cartItem) => {
     console.log(cartItem);
     const filterCart = cart.filter((singlecart) => singlecart.id !== cartItem.id);
+    toast.warning("Item removed from cart!")
     setCart(filterCart);
     addToCartMinus();
     console.log(filterCart);

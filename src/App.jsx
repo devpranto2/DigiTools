@@ -8,6 +8,8 @@ import Stats from './components/Stats/Stats'
 import { ToastContainer } from 'react-toastify'
 import { DiVim } from 'react-icons/di'
 import Steps from './components/Steps/Steps'
+import Pricing from './components/Pricing/Pricing'
+import Footer from './components/Footer/Footer'
 
 
 const fetchData = async () => {
@@ -43,6 +45,8 @@ function App() {
       </CardsSection>
       </Suspense>
       <Steps></Steps>
+      <Pricing></Pricing>
+      <Footer></Footer>
        <ToastContainer />
     </>
   )

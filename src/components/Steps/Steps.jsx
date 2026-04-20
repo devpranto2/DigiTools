@@ -5,11 +5,11 @@ import choseIcon from '../../assets/package.png'
 import Rocket from '../../assets/rocket.png'
 const Steps = () => {
   return (
-    <div className=" bg-gray-100">
+    <div className=" bg-gray-100 pb-12">
         <div className="md:w-10/12 lg:w-8/12 mx-auto ">
       <h1 className="text-center font-bold text-4xl">Get Started in 3 Steps</h1>
       <p className="text-center p-5 text-gray-600">Start using premium digital tools in minutes, not hours.</p>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-4 ">
 
         <div className="flex items-center justify-center  my-5">
           <div className="relative bg-white  w-80  rounded-xl shadow-md p-6 text-center ">

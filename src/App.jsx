@@ -20,18 +20,25 @@ function App() {
   const addToCart = () => {
     setCartCount(prevCount => prevCount + 1);
   };
+  const addToCartMinus = () => {
+    setCartCount(prevCount => prevCount - 1);
+  };
   const cardsPromise = fetchData();
 
   return (
     <>
-      <Navbar cartCount={cartCount}></Navbar>
+      <Navbar  cartCount={cartCount}></Navbar>
       <Hero></Hero>
       <Stats></Stats>
       <Suspense fallback={<div className='flex justify-center'><span className="loading loading-bars loading-xl "></span></div>}>
       <CardsSection 
           addToCart={addToCart}
-          cardsPromise={cardsPromise}>
-
+          cardsPromise={cardsPromise}
+          cartCount={cartCount}
+          setCartCount={setCartCount}
+          addToCartMinus={addToCartMinus}
+          >
+          
       </CardsSection>
       </Suspense>
        <ToastContainer />

@@ -2,7 +2,8 @@ import React from "react";
 import cartIcon from '../../assets/products/shopping-cart.png'
 const Navbar = ({cartCount}) => {
   return (
-    <div className="bg-base-100 shadow-sm ">
+    <nav className="sticky top-0">
+      <div className="bg-base-100 shadow-sm ">
       <div className="navbar justify-between w-11/12 mx-auto ">
         <div className="">
           <div className="dropdown">
@@ -58,6 +59,7 @@ const Navbar = ({cartCount}) => {
         </div>
       </div>
     </div>
+    </nav>
   );
 };
 

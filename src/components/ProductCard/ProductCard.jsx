@@ -16,7 +16,8 @@ const ProductCard = ({ products ,addToCart ,cart ,setCart}) => {
           setActiveButtonId(productId);
           addToCart();
           toast.success('added to cart');
-          setCart([...cart,product])
+          setCart([...cart,product]);
+          
         };
          const isActive = activeButtonId === id;
         return (
@@ -75,7 +76,7 @@ const ProductCard = ({ products ,addToCart ,cart ,setCart}) => {
                 </p>
               </div>
 
-              <button
+              <button type="button"
                 onClick={() => handleActivebtn(id)}
                 className={`mt-6 w-full py-3 rounded-full font-medium shadow-md hover:opacity-90 transition ${
                   isActive
